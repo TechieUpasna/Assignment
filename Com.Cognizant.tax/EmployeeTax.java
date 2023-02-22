@@ -1,9 +1,9 @@
 package com.cognizant.tax;
 
-public class EmployeeTax {
+public class EmployeeTax {  //main class
 
-	public static void main(String[] args) {  
-	    TaxCalculator obj=new TaxCalculator();
+	public static void main(String[] args) {  //main method
+	    TaxCalculator obj=new TaxCalculator();  //object
 	    obj.basicSalary=25000;
 	    obj.tax=30*obj.basicSalary/100;
 		obj.calculatorTax();
