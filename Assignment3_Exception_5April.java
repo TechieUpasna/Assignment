@@ -44,6 +44,9 @@ public class Assignment3_Exception_5April {
 			catch(Exception e) {
 				System.out.println("Exception encountered");
 			}
+			finally {
+				System.out.println("Exception Handling Completed");
+			}
 	}
 	public  void custom(int a)throws MyException{
 		try {
@@ -59,9 +62,10 @@ public class Assignment3_Exception_5April {
 	public static void main(String[] args) throws MyException {
 		Scanner sc=new Scanner(System.in);  //scanner object
 		Assignment3_Exception_5April obj=new Assignment3_Exception_5April();
-		obj.display();
 		System.out.println("Enter a integer number: ");
 		obj.custom(sc.nextInt());
+		obj.display();
+		
 		
 
 	}
